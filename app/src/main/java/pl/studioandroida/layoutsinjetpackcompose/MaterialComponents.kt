@@ -101,10 +101,17 @@ fun NavigationDrawer(){
 
 @Composable
 fun BodyContent(modifier: Modifier = Modifier) {
-    Column(modifier = modifier/*.padding(8.dp)*/) {
-        Text(text = "Hi there!")
-        Text(text = "Thanks for going through the Layouts codelab")
+//    Column(modifier = modifier/*.padding(8.dp)*/) {
+//        Text(text = "Hi there!")
+//        Text(text = "Thanks for going through the Layouts codelab")
+//    }
+    MyOwnColumn(modifier.padding(8.dp)) {
+        Text("MyOwnColumn")
+        Text("places items")
+        Text("vertically.")
+        Text("We've done it by hand!")
     }
+
 }
 
 @Preview
